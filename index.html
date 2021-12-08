@@ -1,0 +1,25 @@
+<script src="/path/to/mousetrap.min.js"></script>
+
+<body>
+  
+  
+<script>
+  var txt = '';
+  var resultBox = document.getElementById('output');
+    // single keys
+    Mousetrap.bind('4', function() { txt += 4; resultBox.value = text;});
+    Mousetrap.bind("?", function() { console.log('show shortcuts!'); });
+    Mousetrap.bind('esc', function() { console.log('escape'); }, 'keyup');
+
+    // combinations
+    Mousetrap.bind('command+shift+k', function() { console.log('command shift k'); });
+
+    // konami code!
+    Mousetrap.bind('up up down enter', function() {
+        console.log('konami code');
+    });
+</script>
+  <div></div>
+<textarea id="output">Start printing</textarea>
+
+</body>

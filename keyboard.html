@@ -5,8 +5,9 @@
   
 <script>
   var txt = '';
+  var resultBox = document.getElementById('output');
     // single keys
-    Mousetrap.bind('4', function() { txt += 4; });
+    Mousetrap.bind('4', function() { txt += 4; resultBox.value = text;});
     Mousetrap.bind("?", function() { console.log('show shortcuts!'); });
     Mousetrap.bind('esc', function() { console.log('escape'); }, 'keyup');
 
